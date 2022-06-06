@@ -21,7 +21,6 @@ header {
     position: sticky;
     top: 0;
     background-size: cover;
-    background-position: center;
     background-image: url("../images/hero-bg.jpg");
     background-attachment: fixed;
     background-position: 80%;
@@ -56,7 +55,7 @@ header nav ul li a {
     padding: 10px 15px;
     font-weight: lighter;
     font-size: 1.55vw;
-    text-shadow: 0 0 100px rgba(0, 0, 0, );
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5 );
 }
 
 header nav ul li a:hover {
@@ -98,7 +97,6 @@ section {
 .hero {
     background-image: url("../images/hero-bg.jpg");
     background-size: cover;
-    background-position: center;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -124,7 +122,7 @@ section {
 }
 
 .hero-form {
-    background-color: #fce138;
+    background-color: rgba(255, 255, 56, 0.5);
     padding: 20px;
     color: #024e76;
     border-style: solid;
@@ -231,15 +229,13 @@ section {
   border-bottom: 1px solid #39a6b2;
 }
 
-.step:nth-child(even) {
-  border-bottom: 1px solid #39a6b2;
-}
-
 .step:last-child {
   border-bottom: none;
 }
 
 .step h3 {
+  color: #024e76;
+  font-size: 46px;
   flex: 1 30%;
 }
 
@@ -285,7 +281,7 @@ section {
   }
 
 .trainer {
-    margin: 0 auto 20px auto;
+    margin: 20px;
     background: #024e76;
     color: #fce138;
     flex: 1;
@@ -365,6 +361,7 @@ section {
   margin-bottom: 15px;
   margin-top: 5px;
   border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.75);
 }
 
 .contact-form input:focus, .contact-form textarea:focus {
@@ -436,7 +433,7 @@ section {
     text-align: center;
   }
   .section-title {
-    width: 80px;
+    width: 80%;
   }
   .trainer {
     flex: 0 70%;
@@ -469,9 +466,12 @@ section {
   .step-text {
     flex: 100%;
   }
+
+  .trainer-bio h3, .trainer-bio h4 {
+    display: block;
+  }
 }
 
-text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 
 /* Media query for mobile phones and smaller*/
 @media screen and (max-width:575px) {
